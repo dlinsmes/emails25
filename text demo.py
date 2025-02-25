@@ -34,3 +34,42 @@ for word in wordList:
 
 #create a dictionary - like a list but a string
 #can be used as an index ("key")
+
+dictionary = {}
+
+#add the key of banana into the dictionary and
+#giving it a value of 1
+dictionary["banana"] = 1
+
+#adds 5 to the value stored with key banana
+dictionary["banana"] += 5
+
+print(dictionary["banana"])
+
+dictionary["shoe"] = 0
+
+print(dictionary)
+
+#doesn't work bc there's no key/value for "chicken" yet
+#dictionary["chicken"] += 10
+
+#check if a particular key already exists in the dictionary
+if "chicken" in dictionary.keys():
+    dictionary["chicken"] += 10
+else:
+    dictionary["chicken"] = 4
+
+
+print(dictionary)
+
+#delete a key/value from the dictionary
+del dictionary["chicken"]
+
+print(dictionary)
+
+#get how many keys are in the dictionary
+print(len(dictionary))
+
+
+
+
